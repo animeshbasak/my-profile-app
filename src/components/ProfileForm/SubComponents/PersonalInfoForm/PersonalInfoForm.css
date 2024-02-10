@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.personal-info-container {
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 16px;
+  font-family: 'Roboto', sans-serif;
+
+  margin: auto;
+}
+
+.personal-info-subcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.personal-info-title {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.personal-info-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.input-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.input-group label {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.input-group input {
+  font-size: 16px;
+  padding: 8px;
+  border: 1px solid #CCC;
+  border-radius: 4px;
+}
+
+.save-btn {
+  padding: 10px 16px;
+  background-color: #1976D2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 30%;
+  margin-top: 16px;
+}
+
+.save-btn:hover {
+  background-color: #1565C0;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.note {
+  margin-top: 16px;
+  color: #333;
+  font-size: 14px;
+}
+
+.note a {
+  color: #1976D2;
+  text-decoration: none;
+}
+
+.input-container {
+  position: relative;
+  margin-right: 26px;
+  margin-bottom: 10px
+}
+
+.input-field {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input-field:focus+.floating-label,
+.input-field:not(:placeholder-shown)+.floating-label {
+  top: 1px;
+
+  left: 12px;
+  font-size: 12px;
+  color: black;
+  background: white;
+  padding: 0 4px;
+  transition: all 0.2s ease-out;
+}
+
+.floating-label {
+  top: 1px;
+
+  left: 12px;
+  font-size: 12px;
+  color: black;
+  background: white;
+  padding: 0 4px;
+  transition: all 0.2s ease-out;
+  position: absolute;
+  left: 12px;
+  top: 1%;
+  transform: translateY(-50%);
+  color: #757575;
+  pointer-events: none;
+  transition: all 0.2s ease-out;
+}
+
+.input-container.large {
+  grid-column: 1 / -1;
+}
+
+
+@media (max-width: 768px) {
+  .input-container.large {
+    grid-column: 1 / -1;
+  }
+}
+
+.personal-info-container {}
+
+.personal-info-title {}
+
+.personal-info-subcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.personal-info-form {
+  flex: 1;
+
+}
+
+
+.profile-pic-container {
+  margin-left: 16px;
+
+}
+
+
+.profile-pic {
+  width: 100px;
+
+  height: 100px;
+
+  border-radius: 50%;
+
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #1976D2;
+
+}
+
+
+.profile-pic img {
+  width: 100%;
+  height: auto;
+
+}
